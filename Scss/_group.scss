@@ -1,0 +1,21 @@
+/* -----------------------------------------------------------------
+    - Groups
+----------------------------------------------------------------- */
+.js-carousel-web {
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+
+  .swiper-slide {
+    text-align: center;
+  }
+
+  .logo-group {
+    max-width: 80%;
+    filter: grayscale(1);
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+      filter: grayscale(0);
+    }
+  }
+}

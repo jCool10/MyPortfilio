@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume</title>
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="./css/vendors/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+  </head>
+
+  <body class="bg-triangles">
+    <!-- Scroll Indicator -->
+    <div class="scroll-line"></div>
+
+    <main class="main">
+      <div class="container gutter-top gutter-bottom">
+        <div class="row sticky-parent">
+          <!-- Sidebar -->
+          <aside class="col-12 col-md-12 col-xl-3">
+            <div class="sidebar box-outer sticky-column">
+              <!-- My photo -->
+              <div class="sidebar__base-info">
+                <figure class="avatar-box">
+                  <img src="img/avatar.jpg" alt="ava" />
+                </figure>
+
+                <div class="text-xl-center">
+                  <h3 class="title title--h3 sidebar__name">Hoang Ngoc Loc</h3>
+                  <div class="badge">Student & Freelancer</div>
+                </div>
+
+                <button class="btn btn--small btn--icon-right sidebar__btn js-btn-toggle">
+                  <span>Show Contacts</span>
+                  <i class="fa fa-chevron-down"></i>
+                </button>
+              </div>
+
+              <div class="sidebar__additional-info js-show">
+                <div class="separation"></div>
+                <ul class="details-info">
+                  <!-- Email -->
+                  <li class="details-info__item">
+                    <span class="box box--s2 icon-box">
+                      <lord-icon
+                        class="font-icon"
+                        src="https://cdn.lordicon.com/iicmtpsq.json"
+                        trigger="morph"
+                        colors="primary:#ffdb6e,secondary:#ffbc5e"
+                      >
+                      </lord-icon>
+                    </span>
+                    <div class="contacts-block__info">
+                      <span class="overhead">Email</span>
+                      <span class="text-overflow" title="hngloc10@gmail.com">
+                        <a href="mailto:hngloc10@gmail.com">hngloc10@gmail.com</a>
+                      </span>
+                    </div>
+                  </li>
+                  <!-- Phone -->
+                  <li class="details-info__item">
+                    <span class="box box--s2 icon-box">
+                      <lord-icon
+                        class="font-icon"
+                        src="https://cdn.lordicon.com/cnyeuzxc.json"
+                        trigger="morph"
+                        colors="primary:#ffdb6e,secondary:#ffbc5e"
+                      >
+                      </lord-icon>
+                    </span>
+                    <div class="contacts-block__info">
+                      <span class="overhead">SDT</span>
+                      <span class="text-overflow" title="+84 374 830 117">
+                        <a href="tel:+84374830117">037 483 0117</a>
+                      </span>
+                    </div>
+                  </li>
+                  <!-- Birthday -->
+                  <li class="details-info__item">
+                    <span class="box box--s2 icon-box">
+                      <lord-icon
+                        class="font-icon"
+                        src="https://cdn.lordicon.com/drtetngs.json"
+                        trigger="morph"
+                        colors="primary:#ffdb6e,secondary:#ffbc5e"
+                      >
+                      </lord-icon>
+                    </span>
+                    <div class="contacts-block__info">
+                      <span class="overhead">Birthday</span>
+                      <span class="text-overflow" title="10/03/2002"> 10/03/2002 </span>
+                    </div>
+                  </li>
+                  <!-- Location -->
+                  <li class="details-info__item">
+                    <span class="box box--s2 icon-box">
+                      <lord-icon
+                        src="https://cdn.lordicon.com/igpbsrza.json"
+                        trigger="morph"
+                        colors="primary:#ffdb6e"
+                        state="morph-2"
+                      >
+                      </lord-icon>
+                    </span>
+                    <div class="contacts-block__info">
+                      <span class="overhead">Quê quán</span>
+                      <span class="text-overflow" title="Quang Tri"> Quang Tri </span>
+                    </div>
+                  </li>
+                </ul>
+                <div class="separation d-xl-none"></div>
+
+                <!-- Social -->
+                <div class="social text-center">
+                  <a class="social__link" href="https://www.facebook.com/reddevils.1908" target="_blank">
+                    <i class="font-icon fab fa-facebook"></i>
+                  </a>
+                  <a class="social__link" href="https://www.instagram.com/jcool.1032" target="_blank">
+                    <i class="font-icon fab fa-instagram"></i>
+                  </a>
+                  <a class="social__link" href="https://github.com/jCool10" target="_blank">
+                    <i class="font-icon fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </aside>
+
+          <!-- Content -->
+          <div class="col-12 col-md-12 col-xl-9">
+            <div class="box-outer">
+              <!-- Menu -->
+              <div class="nav-container">
+                <ul class="nav row">
+                  <!-- Nav item -->
+                  <li class="nav__item col-3">
+                    <a href="index.html">
+                      <span class="nav__icon circle">
+                        <lord-icon
+                          src="https://cdn.lordicon.com/igpbsrza.json"
+                          trigger="morph"
+                          colors="primary:#ffdb5e"
+                        >
+                        </lord-icon>
+                      </span>
+                      <span class="nav__name">Home</span>
+                    </a>
+                  </li>
+                  <li class="nav__item active col-3">
+                    <a href="resume.html">
+                      <span class="nav__icon">
+                        <lord-icon src="https://cdn.lordicon.com/dklbhvrt.json" trigger="loop" colors="primary:#ffdb5e">
+                        </lord-icon>
+                      </span>
+                      <span class="nav__name">Resume</span>
+                    </a>
+                  </li>
+                  <li class="nav__item col-3">
+                    <a href="project.html">
+                      <span class="nav__icon">
+                        <lord-icon
+                          src="https://cdn.lordicon.com/jvucoldz.json"
+                          trigger="morph"
+                          colors="primary:#ffdb6e,secondary:#ffdb5e"
+                        ></lord-icon>
+                      </span>
+                      <span class="nav__name">Project</span>
+                    </a>
+                  </li>
+                  <li class="nav__item col-3">
+                    <a href="contact.html">
+                      <span class="nav__icon">
+                        <lord-icon
+                          src="https://cdn.lordicon.com/zpxybbhl.json"
+                          trigger="morph"
+                          colors="primary:#ffdb6e,secondary:#ffdb5e"
+                        >
+                        </lord-icon>
+                      </span>
+                      <span class="nav__name">Contact</span>
+                    </a>
+                  </li>
+                  <div class="indicator"></div>
+                </ul>
+              </div>
+
+              <!-- About -->
+              <div class="pb-3">
+                <h1 class="title title--h1 title__separate">Resume</h1>
+              </div>
+
+              <!-- Skills -->
+              <h2 class="title title--h2">
+                <span class="box box--s2 icon-box">
+                  <i class="font-icon fa fa-user-cog"></i>
+                </span>
+                Kỹ năng
+              </h2>
+              <div class="box box--s2 box-inner mb-10">
+                <!-- Web Design -->
+                <div class="skill">
+                  <!-- Front end -->
+                  <div class="skill-text"><span>Front end</span></div>
+                  <div class="swiper-container js-carousel-web box-outer">
+                    <div class="swiper-wrapper">
+                      <!-- Item group -->
+                      <figure class="swiper-slide">
+                        <h3 class="title title--h3">HTML</h3>
+                        <img class="logo-group" src="img/icon-1.png" alt="Logo" />
+                      </figure>
+                      <!-- Item group -->
+                      <figure class="swiper-slide">
+                        <h3 class="title title--h3">Css</h3>
+                        <img class="logo-group" src="img/icon-2.png" alt="Logo" />
+                      </figure>
+                      <!-- Item group -->
+                      <figure class="swiper-slide">
+                        <h3 class="title title--h3">JavaScripts</h3>
+                        <img class="logo-group" src="img/icon-3.png" alt="Logo" />
+                      </figure>
+                      <!-- Item group -->
+                      <figure class="swiper-slide">
+                        <h3 class="title title--h3">Sass</h3>
+                        <img class="logo-group" src="img/icon-4.png" alt="Logo" />
+                      </figure>
+                      <!-- Item group -->
+                      <figure class="swiper-slide">
+                        <h3 class="title title--h3">Bootstrap 5</h3>
+                        <img class="logo-group" src="img/bootstrap-5-logo.png" alt="Logo" />
+                      </figure>
+                      <!-- Item group -->
+                      <figure class="swiper-slide">
+                        <h3 class="title title--h3">ReactJS</h3>
+                        <img class="logo-group" src="img/icon-6.png" alt="Logo" />
+                      </figure>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                  </div>
+                  <!-- Back end -->
+                  <div class="skill-text"><span>Back end</span></div>
+                  <div class="swiper-container js-carousel-web box-outer">
+                    <div class="swiper-wrapper">
+                      <!-- Item group -->
+                      <figure class="swiper-slide">
+                        <h3 class="title title--h3">Node JS</h3>
+                        <img class="logo-group" src="img/node-js.png" alt="Logo" />
+                      </figure>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                  </div>
+
+                  <!-- Library -->
+                  <div class="skill-text"><span>Thư viện</span></div>
+                  <div class="swiper-container js-carousel-web box-outer">
+                    <div class="swiper-wrapper">
+                      <!-- Item group -->
+                      <figure class="swiper-slide">
+                        <h3 class="title title--h3">jQuery</h3>
+                        <img class="logo-group" src="img/jquery.png" alt="Logo" />
+                      </figure>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                  </div>
+
+                  <!-- Other -->
+                  <div class="skill-text"><span>Khác</span></div>
+                  <div class="swiper-container js-carousel-web box-outer">
+                    <div class="swiper-wrapper">
+                      <!-- Item group -->
+                      <figure class="swiper-slide">
+                        <h3 class="title title--h3">Figma</h3>
+                        <img class="logo-group" src="img/figma.png" alt="Logo" />
+                      </figure>
+                      <!-- Item group -->
+                      <figure class="swiper-slide">
+                        <h3 class="title title--h3">Photoshop</h3>
+                        <img class="logo-group" src="img/adobe-photoshop.png" alt="Logo" />
+                      </figure>
+                      <!-- Item group -->
+                      <figure class="swiper-slide">
+                        <h3 class="title title--h3">Illustrator</h3>
+                        <img class="logo-group" src="img/adobe-illustrator.png" alt="Logo" />
+                      </figure>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Experience -->
+              <h2 class="title title--h2">
+                <span class="box box--s2 icon-box">
+                  <i class="font-icon fa fa-book-open"></i>
+                </span>
+                Học vấn
+              </h2>
+              <div class="list">
+                <!-- Item -->
+                <article class="list__item">
+                  <h5 class="title title--h4 list__title">Đại học Bách Khoa, Đại học Đà Nẵng</h5>
+                  <span class="list__period">2020 - nay</span>
+                  <p class="list__description">Đang học Kỹ thuật máy tính (Computer Engineering).</p>
+                </article>
+
+                <!-- Item -->
+                <article class="list__item">
+                  <h5 class="title title--h4 list__title">THPT Lao Bảo</h5>
+                  <span class="list__period">2017 — 2020</span>
+                  <p class="list__description"></p>
+                </article>
+              </div>
+
+              <h2 class="title title--h2">
+                <span class="box box--s2 icon-box">
+                  <i class="font-icon fa fa-briefcase"></i>
+                </span>
+                Kinh nghiệm
+              </h2>
+              <div class="list">
+                <!-- Item -->
+                <article class="list__item">
+                  <h5 class="title title--h4 list__title">Freelancer</h5>
+                  <span class="list__period">2021 - nay</span>
+                  <p class="list__description">Nhận dự án theo yêu cầu.</p>
+                </article>
+              </div>
+            </div>
+          </div>
+          <!-- Content -->
+        </div>
+        <!-- sticky-parent -->
+      </div>
+      <!-- container -->
+    </main>
+
+    <div class="back-to-top"></div>
+
+    <!-- JavaScripts -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/plugins.min.js"></script>
+    <script src="js/common.js"></script>
+
+    <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+  </body>
+</html>

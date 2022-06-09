@@ -1,0 +1,193 @@
+/*-----------------------------------------------------
+Nav Bar
+--------------------------------------------------------*/
+.nav-container {
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border);
+  border-radius: 0 var(--radius-20) 0 var(--radius-20);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 4.375rem;
+  padding: 0 2.375rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+
+  > * {
+    min-width: 0;
+  }
+
+  .indicator {
+    position: absolute;
+    top: -50%;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: var(--color-surface-2);
+    // border: 1px solid var(--color-border);
+
+    // border: 6px solid var(--color-surface-1);
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+
+    > * {
+      min-width: 0;
+    }
+
+    .nav__item {
+      width: 70px;
+      height: 70px;
+      z-index: 1;
+      margin-right: 2rem;
+
+      a {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        font-weight: normal;
+
+        .nav__icon {
+          display: block;
+          line-height: 60px;
+          font-size: 1.5rem;
+          text-align: center;
+          transition: 0.5s;
+        }
+
+        .nav__name {
+          position: absolute;
+          font-weight: 500;
+          font-size: 1.1em;
+          transition: 0.5s;
+          padding: 2px 7px;
+          background-color: var(--color-surface-1);
+          border-radius: 12px;
+          opacity: 0;
+          transform: translateY(-25px);
+        }
+      }
+
+      &.active {
+        .nav__icon {
+          transform: translateY(-35px);
+        }
+
+        .nav__name {
+          opacity: 1;
+          transform: translateY(10px);
+        }
+
+        &:nth-child(1) ~ .indicator {
+          transform: translateX(calc((70px + 2rem) * 0));
+        }
+        &:nth-child(2) ~ .indicator {
+          transform: translateX(calc((70px + 2rem) * 1));
+        }
+        &:nth-child(3) ~ .indicator {
+          transform: translateX(calc((70px + 2rem) * 2));
+        }
+        &:nth-child(4) ~ .indicator {
+          transform: translateX(calc((70px + 2rem) * 3));
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .nav-container {
+    // backdrop-filter: blur(6px);
+    // background: rgba(43, 43, 44, 0.75);
+    border-radius: var(--radius-20) var(--radius-20) 0 0;
+    box-shadow: var(--box-shadow-30);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    height: 3.8125rem;
+    width: 100%;
+    z-index: 1112;
+
+    > * {
+      min-width: 0;
+    }
+    .nav {
+      .nav__item {
+        margin-right: 2rem;
+
+        .nav__icon {
+          transform: translateY(-5px);
+        }
+
+        &.active {
+          .nav__icon {
+            transform: translateY(-35px);
+          }
+        }
+      }
+    }
+  }
+
+  .medium-zoom--opened .nav-container {
+    z-index: 10;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .nav {
+    font-size: 0.875rem;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .nav-container {
+    border-radius: var(--radius-12) var(--radius-12) 0 0;
+    height: 3rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    .nav {
+      font-size: 0.6875rem;
+      .nav__item {
+        margin-right: 1.25rem;
+
+        &.active {
+          .nav__name {
+            transform: translateY(-2px);
+          }
+          &:nth-child(1) ~ .indicator {
+            transform: translateX(calc((70px + 1.25rem) * 0));
+          }
+          &:nth-child(2) ~ .indicator {
+            transform: translateX(calc((70px + 1.25rem) * 1));
+          }
+          &:nth-child(3) ~ .indicator {
+            transform: translateX(calc((70px + 1.25rem) * 2));
+          }
+          &:nth-child(4) ~ .indicator {
+            transform: translateX(calc((70px + 1.25rem) * 3));
+          }
+        }
+      }
+
+      .indicator {
+        top: -65%;
+      }
+    }
+  }
+}

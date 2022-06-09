@@ -1,0 +1,55 @@
+.skill {
+  display: block;
+  background: transparent;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  height: auto;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .skill-text {
+    margin-bottom: 0.5rem;
+
+    span {
+      color: var(--color-heading);
+      font-weight: 500;
+    }
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .skill {
+    font-size: 0.8125rem;
+    margin-bottom: 1rem;
+  }
+}
+
+/*Swiper*/
+.js-carousel-web,
+.js-carousel-softskill {
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+
+  .swiper-slide {
+    text-align: center;
+  }
+
+  .logo-group {
+    max-width: 80%;
+    filter: grayscale(1);
+    transition: all 0.5s ease-in-out;
+    max-height: 80px;
+
+    &:hover {
+      filter: grayscale(0);
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .logo-group {
+    filter: grayscale(0) !important;
+  }
+}

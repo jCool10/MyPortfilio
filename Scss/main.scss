@@ -1,0 +1,73 @@
+/* ------------------------------------------------
+ 
+ - Vendors
+ - Font Icons
+ - Variables
+ - General Styles
+ - Typography
+ - Form
+ - Button
+ - Sidebar
+ - Sections
+ - Navbar
+ - Popup
+ - Cases
+ - web
+ - Contact
+ - Portfolio
+ - News
+ - Single news
+ - Single project
+ - Teammates
+ - Timeline
+ - Footer
+ - Other
+ 
+------------------------------------------------ */
+@import url('vendors/swiper.min.css');
+
+@import url('vendors/simplebar.min.css');
+
+@import url('vendors/magnific-popup.css');
+
+@import url('vendors/photoswipe.css');
+
+@import url('vendors/default-skin.css');
+
+@import url('../icons/style-custome-icons.css');
+
+@import url('../icons/feather.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+@import './variale';
+
+@import './global';
+
+@import './form';
+
+@import './skill';
+
+@import './button';
+
+@import './sidebar';
+
+@import './section';
+
+@import './navbar';
+
+@import './popup';
+
+@import './cases';
+
+@import './contact';
+
+@import './portfolio';
+
+@import './news';
+
+@import './project';
+
+@import './swiper';
+
+/*# sourceMappingURL=style.css.map */
