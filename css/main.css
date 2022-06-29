@@ -2080,8 +2080,7 @@ Nav Bar
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-left: -0.9375rem;
-  margin-right: -0.9375rem;
+  margin: 0 -0.9375rem;
 }
 
 .news-grid > * {
